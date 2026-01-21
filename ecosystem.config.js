@@ -1,6 +1,6 @@
 module.exports = {                                                                                                      
   apps: [{                                                                                                              
-    name: 'nodetest',                                                                                                   
+    name: process.env.PM2_APP_NAME || 'meu-app-default',                                                                                                   
     script: 'backend/server.js',                                                                                        
     exec_mode: 'fork',                                                                                                  
     instances: 1,                                                                                                       
